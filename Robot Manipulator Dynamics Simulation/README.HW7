@@ -1,0 +1,29 @@
+Overview
+This assignment involves simulating the motion of a 2-degree of freedom robotic manipulator based on dynamic equations and torque inputs. You will use MATLAB to calculate the robot's end-effector trajectory in response to given torque commands under different conditions.
+Problem 1: Robot Manipulator Dynamics Simulation
+Task Description
+1.	Objective:
+o	Simulate the end-effector trajectory of a 2-DoF planar robot arm using the given dynamic model and torque inputs.
+o	Dynamics of the robot are described by the equation: B(q)q¨+C(q,q˙)q˙+G(q)=τB(q) \ddot{q} + C(q, \dot{q}) \dot{q} + G(q) = \tauB(q)q¨+C(q,q˙)q˙+G(q)=τ
+2.	Provided Resources:
+o	A MATLAB function dynamics_matrices(q, qdot) that outputs matrices BBB, CCC, and GGG for given joint angles qqq and angular velocities q˙\dot{q}q˙.
+o	A text file torques.txt containing torque commands for the robot’s joints at a 1kHz frequency.
+3.	Simulation Details:
+o	Part (a): Simulate the robot's motion using the provided torques at 1kHz. Plot the trajectory of the end-effector on the x-y plane.
+o	Part (b): Re-simulate the robot's motion assuming the same torques are now sent at a frequency of 200Hz. Plot the trajectory as in Part (a).
+Requirements
+•	Matlab Code:
+o	Develop MATLAB scripts to perform the simulations for both specified frequencies.
+o	Implement numerical integration to solve the robot's dynamic equation given the initial conditions (zero angular positions and velocities) and the torque commands over time.
+o	Use the provided dynamics matrices function to compute necessary dynamics parameters during the simulation.
+•	Trajectory Plotting:
+o	For each part, generate a plot showing the trajectory of the robot's end-effector in the x-y plane.
+o	Ensure plots include axes labels, legends, and appropriate title to clearly convey the simulation conditions and results.
+•	Validation and Testing:
+o	Verify that your simulation correctly utilizes the dynamics equations and adheres to the provided torque commands.
+o	Test the responsiveness of the simulation to varying torque frequencies and discuss any observed differences in the trajectory plots.
+•	Documentation and Submission:
+o	Provide a detailed description of your approach, including how the dynamics equations were integrated and how the trajectory was computed and plotted.
+o	Include all MATLAB code and resulting plots in your submission.
+o	Prepare a zip file containing all relevant files, ensuring that the script main.m when executed, shows the required results.
+
