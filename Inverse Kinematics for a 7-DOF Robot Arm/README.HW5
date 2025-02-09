@@ -1,0 +1,31 @@
+Overview
+In this assignment, you are tasked with developing a MATLAB script to solve the inverse kinematics problem for a 7-degree-of-freedom robot arm using the Jacobian inverse method. The goal is to determine the joint angles that position the robot's end-effector at a specified pose given by a homogeneous transformation matrix.
+Problem 1: Inverse Kinematics for a 7-DOF Robot Arm
+Task Description
+1.	Objective:
+o	Write a MATLAB script to solve the inverse kinematics of a 7-degree-of-freedom robot arm.
+o	Use the Jacobian inverse method to compute the joint angles that achieve a desired end-effector position and orientation.
+2.	Homogeneous Transformation Matrix:
+o	You are given a target end-effector pose in the form of a homogeneous transformation matrix T07T_{0}^{7}T07.
+o	The specific matrix values provided detail the orientation and position of the end-effector in the robot's workspace.
+3.	Initial Configuration:
+o	The robot arm starts from a given initial configuration of joint angles qqq.
+4.	Verification:
+o	After computing the inverse kinematics solution, verify its correctness by performing forward kinematics using the computed joint angles.
+o	Compare the forward kinematics output with the given desired transformation matrix to ensure accuracy.
+5.	Script Requirements:
+o	The MATLAB script must automatically compute the joint configurations and verify them without manual intervention.
+o	Final outputs should include:
+	The desired transformation matrix T07T_{0}^{7}T07.
+	The computed joint configurations qqq.
+	The actual transformation matrix obtained via forward kinematics based on the computed qqq.
+Specific Instructions
+•	Jacobian Inverse Method:
+o	Implement this method to compute the inverse kinematics. Adjust the algorithm to handle potential singularities and ensure numerical stability.
+•	Testing and Validation:
+o	Thoroughly test the script using the initial configuration and check if the end-effector's position matches the desired pose.
+o	Include checks within the script to validate the accuracy of the inverse kinematics solution against the forward kinematics results.
+•	Output and Documentation:
+o	The script should clearly print or display the results, making it easy to verify the accuracy of the inverse kinematics.
+o	Document your MATLAB code with comments explaining key steps and algorithms.
+
