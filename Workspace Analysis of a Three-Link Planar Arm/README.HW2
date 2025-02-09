@@ -1,0 +1,24 @@
+Overview
+This assignment requires you to analyze the workspace of a three-link planar robotic arm using MATLAB. You will create visualizations to illustrate the reachable areas of the arm’s end-effector based on given joint constraints.
+Problem 1: Workspace Analysis of a Three-Link Planar Arm
+Task Description
+1.	Workspace Curve Drawing:
+o	Objective: Generate curves representing the workspace of a three-link planar robotic arm.
+o	Specifications:
+	Link lengths: a1=0.5a_1 = 0.5a1=0.5, a2=0.3a_2 = 0.3a2=0.3, a3=0.2a_3 = 0.2a3=0.2
+	Joint angle ranges: q1q_1q1 from −π/3-\pi/3−π/3 to π/3\pi/3π/3, q2q_2q2 from −2π/3-2\pi/3−2π/3 to 2π/32\pi/32π/3, q3q_3q3 from −π/2-\pi/2−π/2 to π/2\pi/2π/2.
+o	Methodology: Use forward kinematics to map from joint angles to Cartesian coordinates of the end-effector.
+2.	Validation of Workspace:
+o	Objective: Confirm the computed workspace by plotting the end-effector positions over a grid of joint angle combinations.
+o	Approach: Sample each joint angle at 50 equally spaced values within their respective ranges, resulting in 503=125,00050^3 = 125,000503=125,000 total combinations.
+o	Visualization: Overlay these end-effector positions on the workspace plot to validate the workspace boundaries.
+Requirements
+•	Matlab Code:
+o	Create MATLAB scripts that perform the above computations and generate the required visualizations.
+o	Ensure main.m executes all necessary code to display the final results without additional input.
+•	Plotting:
+o	Generate a result plot matching the provided template, including correct axes, legends, and other plot features.
+•	Documentation:
+o	Provide a detailed explanation in PDF format of the methods used to determine the workspace and to validate it with end-effector positions.
+o	Include the result plot in the documentation.
+
