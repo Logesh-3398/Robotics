@@ -1,0 +1,24 @@
+Overview
+For this assignment, you will develop a MATLAB program to analyze the field of view of a robotic dinosaur's camera, ensuring it always encompasses a specific window aimed at viewing 
+visitors. You will also calculate the minimum distance from the camera to the window throughout the dinosaur's operation.
+Problem 1: Camera Field of View Analysis
+Task Description
+1.	Field of View Check:
+o	Objective: Determine if the camera installed at point F on the dinosaur mechanism always included the window (GH) in its field of view throughout the day.
+o	Approach: Using the data from six joint sensors collected every second (available in encoder.txt), calculate the orientation of the camera. Check if any part of the window falls within 
+the camera's 60-degree field of view.
+o	Output: Generate a plot where the signal is '1' if the window is within the field of view and '0' otherwise.
+2.	Minimum Distance Calculation:
+o	Objective: Compute the minimum distance from the camera to the window throughout the operational period.
+o	Method: Utilize the positions and orientations derived from the joint encoders to calculate the distance from point F to the window at each sampled time point.
+Requirements
+•	Matlab Code:
+o	Create MATLAB functions and scripts necessary to perform the above analyses. Ensure that the main script, main.m, when executed, should display the required results and plots without 
+additional input or alteration.
+•	Visualization:
+o	The result plot should match the template provided (similar to Fig. 2 in your assignment prompt). This includes axes, legends, and other plot characteristics.
+•	Documentation:
+o	Include a detailed description of the methods and algorithms used to solve the problems. Explain how the data was processed, how calculations were performed, and any assumptions made.
+o	Ensure the numerical result for the minimum distance is displayed clearly in the MATLAB command window.
+
+
