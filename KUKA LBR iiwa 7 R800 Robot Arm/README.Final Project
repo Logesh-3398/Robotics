@@ -1,0 +1,28 @@
+Overview
+For the final project, you are tasked with programming a 7-degree-of-freedom robot arm to precisely position a rectangular shape onto a designated target. The project involves using 
+inverse kinematics, trajectory planning, and motion control within specified joint constraints.
+Project Details
+1.	Objective:
+o	Program the KUKA LBR iiwa 7 R800 robot arm to align a rectangular shape with a target on a table. Use a camera mounted on the robot to locate the target via an Aruco marker.
+2.	Tasks:
+o	Trajectory Design: Develop a trajectory in the joint space that moves the robot from its initial configuration to a final pose where the rectangular shape is directly above the target.
+o	Aruco Marker Detection: Utilize the camera to detect the Aruco marker's position and orientation, which will be used to compute the exact location and orientation of the target.
+o	Simulation and Validation: Simulate the robot's trajectory to ensure the end-effector positions the rectangular shape correctly without exceeding joint limits or colliding with the table.
+3.	Deliverables:
+o	Matlab Code: All necessary scripts to compute the trajectory, perform simulations, and validate the motion.
+o	Technical Report: A document (max. 5 pages) describing the methods used for trajectory planning, target detection, and motion simulation. Include discussions on how the joint constraints 
+were handled and any challenges encountered.
+o	Trajectory Data File: A .txt file containing the robot configurations at every 5 ms interval over a 10-second period. This file should have 2,000 rows (corresponding to 10 seconds / 5 ms 
+per interval) and 7 columns (one for each joint).
+4.	Implementation Details:
+o	Initial and Final Configurations: Start from a given joint configuration and ensure the trajectory ends with the robot holding the rectangular shape steady above the target for 2 seconds.
+o	Kinematics and Dynamics: Use forward and inverse kinematics to plan the trajectory. Make sure the robot's motion respects the dynamic capabilities and limits of each joint.
+5.	Evaluation and Presentation:
+o	Performance Evaluation: Your project will be evaluated based on the robot's ability to achieve the task without exceeding positional or velocity limits, and without any collisions.
+o	Presentation: Present your work in a 5-minute meeting with the instructor, demonstrating the robot’s trajectory and discussing your technical approach and any issues you resolved.
+Specific Instructions
+•	Velocity and Position Limits: Ensure your trajectory respects the robot’s maximum joint velocities and positions throughout the motion.
+•	Collision Avoidance: Include checks in your simulation to ensure the robot does not hit the table or any other obstacles.
+•	Software Tools: Utilize MATLAB for all computations, simulations, and trajectory planning. Employ available robotics toolboxes for handling kinematics and dynamics.
+•	File Naming and Submission: Comply strictly with the file naming conventions and submission guidelines provided in the project description.
+
